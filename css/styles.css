@@ -14,8 +14,9 @@ body {
 }
 
 .input-container {
-    max-width: 75%;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 #input {
@@ -30,15 +31,9 @@ input::placeholder {
 .gallery {
     margin: 0 auto;
     display: grid;
-    max-width: 780px;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    grid-template-rows: 180px 180px;
+    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+    grid-template-rows: 200px;
     grid-gap: 20px;
-
-}
-
-.gallery img {
-    height: auto;
-    width: 100%;
-    margin-bottom: 25px;
+    justify-content: center;
 }
