@@ -15,8 +15,8 @@ body {
 
 .input-container {
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    max-width: 65%;
+    margin: 0 auto 15px auto;
 }
 
 #input {
