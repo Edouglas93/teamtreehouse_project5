@@ -1,7 +1,7 @@
 
 //Variables 
-let searchBox = document.querySelector('#input').toLowerCase();
-let pictures = docucment.querySelectorAll('a');
+let searchBox = document.querySelector('#input');
+let pictures = document.querySelectorAll('a');
 
 searchBox.addEventListener("keyup", (event) => {
     for(let i = 0; i < pictures.length; i++) {
