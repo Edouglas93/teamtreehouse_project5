@@ -3,8 +3,9 @@
 let searchBox = document.querySelector('#input');
 let pictures = doucment.querySelectorAll('a');
 
-searchBox.addEventListener("keypress", () => {
+searchBox.addEventListener("keyup", () => {
     for(let i = 0; i < pictures.length; i++) {
+        
         if(pictures[i].data-caption.title.includes(searchBox.value));
             pictures[i].style.display = "inital";
     }
