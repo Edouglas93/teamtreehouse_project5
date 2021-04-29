@@ -28,6 +28,12 @@ input::placeholder {
     font-size: 16px;
 }
 
+input:focus {
+    outline-color: rgb(11, 115, 150);
+    background-color: rgb(36, 114, 128);
+    transition: background-color 1s, outline-color .5s;
+}
+
 .gallery {
     margin: 0 auto;
     display: grid;
