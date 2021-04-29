@@ -8,7 +8,7 @@ searchBox.addEventListener("keyup", (event) => {
         if(searchBox.value.length == 0){
             pictures[i].style.display = "inline";
         }
-        else if (pictures[i].getAttribute("data-caption").includes(searchBox.value)) {
+        else if (pictures[i].getAttribute("data-caption").toLowerCase().includes(searchBox.value.toLowerCase())) {
             pictures[i].style.display = "block";
         }
         else {
